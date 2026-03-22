@@ -36,9 +36,7 @@
 - `ThreadPool`：通用后台任务执行。
 - `scripts/echo_bench.py`：Echo 压测脚本（吞吐与延迟统计）。
 
-## 项目创建顺序（实习面试叙事）
-
-建议按以下 7 个阶段讲述项目，从“能跑”到“可交付”：
+## 项目创建顺序
 
 1. 网络与事件基础：先完成 `Socket/Address`、`Channel`、`Poller`、`EventLoop` 的最小闭环。
 2. 连接与服务抽象：实现 `Acceptor`、`TcpConnection`、`TcpServer`，跑通 Echo 基线。
@@ -47,8 +45,6 @@
 5. 稳定性治理：加入优雅停机、背压高水位回调、异常连接清理与故障路径修复。
 6. 可观测与压测：输出运行统计与 Prometheus 文本指标，补充压测脚本与报告。
 7. 工程化交付：补单测/集测、故障注入脚本、Linux+Windows CI，形成持续回归链路。
-
-实习答辩建议：优先讲你亲自解决过的问题（如跨线程析构、停机卡住、半包粘包），再讲性能和工程化结果，面试官更容易认可你的真实贡献。
 
 ## 已完成的稳定性优化
 
@@ -195,13 +191,6 @@ python3 ./scripts/perf_compare.py --report docs/perf_report.md
 python3 ./scripts/lf_client.py --host 127.0.0.1 --port 9000 --message hello
 python3 ./scripts/lf_client.py --host 127.0.0.1 --port 9000 --ping
 ```
-
-## 后续可扩展方向（简历加分项）
-
-- 增加更细粒度的压力场景（慢读客户端、突发洪峰、长连接空闲混合流量）。
-- 增加测试覆盖率统计与门禁（例如覆盖率阈值）。
-- 增加 Windows 端运行态压测数据并补全双平台性能对比。
-- 增加可视化指标上报（例如接入 Prometheus + Grafana）。
 
 ## 说明
 
