@@ -1,0 +1,87 @@
+Date : 2026-03-16 03:23:51
+Directory : /home/lz/Lz_Projects/light_reactor
+Total : 52 files,  50483 codes, 328 comments, 908 blanks, all 51719 lines
+
+Languages
++--------------+------------+------------+------------+------------+------------+
+| language     | files      | code       | comment    | blank      | total      |
++--------------+------------+------------+------------+------------+------------+
+| Log          |          2 |     45,054 |          0 |          2 |     45,056 |
+| C++          |         41 |      4,823 |        321 |        718 |      5,862 |
+| Python       |          4 |        339 |          5 |         89 |        433 |
+| Markdown     |          2 |        157 |          0 |         71 |        228 |
+| YAML         |          1 |         57 |          0 |         13 |         70 |
+| Shell Script |          2 |         53 |          2 |         15 |         70 |
++--------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                      |         52 |     50,483 |        328 |        908 |     51,719 |
+| . (Files)                                                              |         40 |     49,774 |        318 |        738 |     50,830 |
+| .github                                                                |          1 |         57 |          0 |         13 |         70 |
+| .github/workflows                                                      |          1 |         57 |          0 |         13 |         70 |
+| docs                                                                   |          1 |         12 |          0 |          6 |         18 |
+| scripts                                                                |          6 |        392 |          7 |        104 |        503 |
+| tests                                                                  |          4 |        248 |          3 |         47 |        298 |
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| filename                                                               | language     | code       | comment    | blank      | total      |
++------------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| /home/lz/Lz_Projects/light_reactor/.github/workflows/ci.yml            | YAML         |         57 |          0 |         13 |         70 |
+| /home/lz/Lz_Projects/light_reactor/README.md                           | Markdown     |        145 |          0 |         65 |        210 |
+| /home/lz/Lz_Projects/light_reactor/acceptor.cpp                        | C++          |         78 |          9 |         12 |         99 |
+| /home/lz/Lz_Projects/light_reactor/acceptor.h                          | C++          |         30 |          7 |          8 |         45 |
+| /home/lz/Lz_Projects/light_reactor/address.cpp                         | C++          |         57 |          2 |          9 |         68 |
+| /home/lz/Lz_Projects/light_reactor/address.h                           | C++          |         28 |          5 |          9 |         42 |
+| /home/lz/Lz_Projects/light_reactor/buffer.cpp                          | C++          |        242 |         11 |         39 |        292 |
+| /home/lz/Lz_Projects/light_reactor/buffer.h                            | C++          |         59 |         21 |         20 |        100 |
+| /home/lz/Lz_Projects/light_reactor/channel.cpp                         | C++          |        171 |          4 |         10 |        185 |
+| /home/lz/Lz_Projects/light_reactor/channel.h                           | C++          |         46 |         11 |         12 |         69 |
+| /home/lz/Lz_Projects/light_reactor/config.h                            | C++          |         49 |          8 |         12 |         69 |
+| /home/lz/Lz_Projects/light_reactor/docs/perf_report.md                 | Markdown     |         12 |          0 |          6 |         18 |
+| /home/lz/Lz_Projects/light_reactor/epoll_poller.cpp                    | C++          |        160 |          2 |          8 |        170 |
+| /home/lz/Lz_Projects/light_reactor/epoll_poller.h                      | C++          |         28 |          3 |          6 |         37 |
+| /home/lz/Lz_Projects/light_reactor/eventloop.cpp                       | C++          |        444 |         29 |         86 |        559 |
+| /home/lz/Lz_Projects/light_reactor/eventloop.h                         | C++          |         72 |         28 |         23 |        123 |
+| /home/lz/Lz_Projects/light_reactor/global.h                            | C++          |         60 |          6 |         10 |         76 |
+| /home/lz/Lz_Projects/light_reactor/length_field_codec.cpp              | C++          |         69 |          0 |          3 |         72 |
+| /home/lz/Lz_Projects/light_reactor/length_field_codec.h                | C++          |         20 |          9 |          8 |         37 |
+| /home/lz/Lz_Projects/light_reactor/log_utils.cpp                       | C++          |         51 |          0 |          8 |         59 |
+| /home/lz/Lz_Projects/light_reactor/log_utils.h                         | C++          |         13 |          3 |          2 |         18 |
+| /home/lz/Lz_Projects/light_reactor/logger.cpp                          | C++          |        344 |          7 |         45 |        396 |
+| /home/lz/Lz_Projects/light_reactor/logger.h                            | C++          |        121 |         19 |         27 |        167 |
+| /home/lz/Lz_Projects/light_reactor/main.cpp                            | C++          |        110 |          0 |         23 |        133 |
+| /home/lz/Lz_Projects/light_reactor/poller.cpp                          | C++          |         25 |          1 |          9 |         35 |
+| /home/lz/Lz_Projects/light_reactor/poller.h                            | C++          |         19 |         10 |          7 |         36 |
+| /home/lz/Lz_Projects/light_reactor/scripts/build_linux.sh              | Shell Script |         13 |          1 |          6 |         20 |
+| /home/lz/Lz_Projects/light_reactor/scripts/echo_bench.py               | Python       |         92 |          1 |         24 |        117 |
+| /home/lz/Lz_Projects/light_reactor/scripts/fault_injection.py          | Python       |         90 |          2 |         25 |        117 |
+| /home/lz/Lz_Projects/light_reactor/scripts/lf_client.py                | Python       |         40 |          1 |         16 |         57 |
+| /home/lz/Lz_Projects/light_reactor/scripts/perf_compare.py             | Python       |        117 |          1 |         24 |        142 |
+| /home/lz/Lz_Projects/light_reactor/scripts/run_tests.sh                | Shell Script |         40 |          1 |          9 |         50 |
+| /home/lz/Lz_Projects/light_reactor/socket.cpp                          | C++          |        276 |          7 |         30 |        313 |
+| /home/lz/Lz_Projects/light_reactor/socket.h                            | C++          |         32 |          7 |          9 |         48 |
+| /home/lz/Lz_Projects/light_reactor/socket_utils.cpp                    | C++          |        275 |          1 |         19 |        295 |
+| /home/lz/Lz_Projects/light_reactor/socket_utils.h                      | C++          |         31 |         19 |         13 |         63 |
+| /home/lz/Lz_Projects/light_reactor/tcframe.2026-03-16.log              | Log          |     45,041 |          0 |          1 |     45,042 |
+| /home/lz/Lz_Projects/light_reactor/tcframe.error.2026-03-16.log        | Log          |         13 |          0 |          1 |         14 |
+| /home/lz/Lz_Projects/light_reactor/tcpclient.cpp                       | C++          |        192 |          8 |         20 |        220 |
+| /home/lz/Lz_Projects/light_reactor/tcpclient.h                         | C++          |         55 |         11 |         18 |         84 |
+| /home/lz/Lz_Projects/light_reactor/tcpconnection.cpp                   | C++          |        415 |         11 |         20 |        446 |
+| /home/lz/Lz_Projects/light_reactor/tcpconnection.h                     | C++          |         86 |         15 |         19 |        120 |
+| /home/lz/Lz_Projects/light_reactor/tcpserver.cpp                       | C++          |        478 |          0 |         57 |        535 |
+| /home/lz/Lz_Projects/light_reactor/tcpserver.h                         | C++          |         74 |         15 |         16 |        105 |
+| /home/lz/Lz_Projects/light_reactor/tests/test_codec.cpp                | C++          |         38 |          2 |          8 |         48 |
+| /home/lz/Lz_Projects/light_reactor/tests/test_common.h                 | C++          |         31 |          0 |          4 |         35 |
+| /home/lz/Lz_Projects/light_reactor/tests/test_connection_lifecycle.cpp | C++          |        139 |          0 |         24 |        163 |
+| /home/lz/Lz_Projects/light_reactor/tests/test_timer.cpp                | C++          |         40 |          1 |         11 |         52 |
+| /home/lz/Lz_Projects/light_reactor/thread_pool.cpp                     | C++          |        111 |         10 |         20 |        141 |
+| /home/lz/Lz_Projects/light_reactor/thread_pool.h                       | C++          |         52 |         11 |         14 |         77 |
+| /home/lz/Lz_Projects/light_reactor/wspoll_poller.cpp                   | C++          |        176 |          6 |         14 |        196 |
+| /home/lz/Lz_Projects/light_reactor/wspoll_poller.h                     | C++          |         26 |          2 |          6 |         34 |
+| Total                                                                  |              |     50,483 |        328 |        908 |     51,719 |
++------------------------------------------------------------------------+--------------+------------+------------+------------+------------+

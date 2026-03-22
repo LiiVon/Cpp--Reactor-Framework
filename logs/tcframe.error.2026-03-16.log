@@ -1,0 +1,13 @@
+[2026-03-16 03:00:41.129] [ERROR] bind address 0.0.0.0:9000 failed: Address already in use
+[2026-03-16 03:01:08.877] [ERROR] bind address 0.0.0.0:9000 failed: Address already in use
+[2026-03-16 03:01:36.000] [ERROR] bind address 0.0.0.0:9000 failed: Address already in use
+[2026-03-16 03:02:43.319] [ERROR] bind address 0.0.0.0:9000 failed: Address already in use
+[2026-03-16 03:04:09.503] [ERROR] bind address 0.0.0.0:9000 failed: Address already in use
+[2026-03-16 03:12:11.854] [ERROR] invalid frame length: 8388608, close connection: Conn-127.0.0.1:54680-10
+[2026-03-16 03:12:11.855] [ERROR] HandleWrite called but connection is not connected, fd: -1
+[2026-03-16 03:12:36.311] [ERROR] invalid frame length: 8388608, close connection: Conn-127.0.0.1:45432-10
+[2026-03-16 03:12:36.312] [ERROR] HandleWrite called but connection is not connected, fd: -1
+[2026-03-16 03:13:26.576] [ERROR] invalid frame length: 8388608, close connection: Conn-127.0.0.1:34834-10
+[2026-03-16 03:13:26.576] [ERROR] HandleWrite called but connection is not connected, fd: -1
+[2026-03-16 03:17:05.438] [ERROR] invalid frame length: 8388608, close connection: Conn-127.0.0.1:48628-10
+[2026-03-16 03:17:05.438] [ERROR] HandleWrite called but connection is not connected, fd: -1

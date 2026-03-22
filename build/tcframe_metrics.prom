@@ -1,0 +1,27 @@
+# HELP tcframe_connections_total Total accepted connections
+# TYPE tcframe_connections_total counter
+tcframe_connections_total 4
+# HELP tcframe_connections_closed_total Total closed connections
+# TYPE tcframe_connections_closed_total counter
+tcframe_connections_closed_total 3
+# HELP tcframe_connections_active Current active connections
+# TYPE tcframe_connections_active gauge
+tcframe_connections_active 1
+# HELP tcframe_server_stopping Whether graceful shutdown is in progress
+# TYPE tcframe_server_stopping gauge
+tcframe_server_stopping 1
+# HELP tcframe_output_high_watermark_triggered_total High watermark trigger count
+# TYPE tcframe_output_high_watermark_triggered_total counter
+tcframe_output_high_watermark_triggered_total 0
+# HELP tcframe_connection_pending_write_bytes Current pending write bytes on active connections
+# TYPE tcframe_connection_pending_write_bytes gauge
+tcframe_connection_pending_write_bytes 0
+# HELP tcframe_connection_bytes_read_total Total bytes read by active connections
+# TYPE tcframe_connection_bytes_read_total counter
+tcframe_connection_bytes_read_total 8
+# HELP tcframe_connection_bytes_written_total Total bytes written by active connections
+# TYPE tcframe_connection_bytes_written_total counter
+tcframe_connection_bytes_written_total 8
+# HELP tcframe_uptime_seconds Server uptime seconds
+# TYPE tcframe_uptime_seconds gauge
+tcframe_uptime_seconds 1805.22

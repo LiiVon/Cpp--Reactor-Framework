@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ python3 libyaml-cpp-dev
+
+      - name: Build
+        run: |
+          chmod +x scripts/build_linux.sh
+          ./scripts/build_linux.sh
+
+      - name: Run tests
+        run: |
+          chmod +x scripts/run_tests.sh
+          ./scripts/run_tests.sh
+
+      - name: Fault injection
+        run: |
+          python3 ./scripts/fault_injection.py --port 9100 --threads 1
+
+      - name: Generate perf report
+        run: |
+          python3 ./scripts/perf_compare.py --report docs/perf_report_ci.md --clients 20 --requests 150 --message-size 64
+
+      - name: Upload perf report
+        uses: actions/upload-artifact@v4
+        with:
+          name: perf-report-linux
+          path: docs/perf_report_ci.md
+
+  windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup MSYS2
+        uses: msys2/setup-msys2@v2
+        with:
+          update: true
+          install: >-
+            mingw-w64-x86_64-gcc
+            mingw-w64-x86_64-yaml-cpp
+            make
+            python
+
+      - name: Build
+        run: |
+          g++ -std=c++17 -c ./*.cpp -I.
+          g++ -std=c++17 -o main.exe ./*.o -lyaml-cpp -lpthread
+
+      - name: Run tests
+        run: |
+          chmod +x scripts/run_tests.sh
+          ./scripts/run_tests.sh
